@@ -2,12 +2,14 @@ package Biblioteca;
 
 public class Cliente {
 
-    private String nome;
+    private String nome; // Nome do cliente
 
     public Cliente(String nome) {
         this.nome = nome;
     }
 
+// Método getter para obter o nome do cliente
+    
     public String getNome() {
         return nome;
     }
@@ -28,11 +30,11 @@ public class Cliente {
 
     private double calcularDesconto(double preco) {
         if (preco <= 50) {
-            return preco * 0.10;
+            return preco * 0.10; // 10% de desconto para livros com preço até R$ 50
         } else if (preco <= 100) {
-            return preco * 0.15;
+            return preco * 0.15; // 15% de desconto para livros com preço entre R$ 50 e R$ 100
         } else {
-            return preco * 0.20;
+            return preco * 0.20; // 20% de desconto para livros com preço acima de R$ 100
         }
     }
 
